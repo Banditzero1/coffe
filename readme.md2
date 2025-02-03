@@ -1,0 +1,114 @@
+﻿+----------------------+
+|      Form1          |
++----------------------+
+| - coffee: Incraingredient |
+| - water: Incraingredient |
+| - Chocolate: Incraingredient |
+| - MIke: Incraingredient |
+| - Use2: BuyDrink1 |
+| - Use3: BuyDrink02 |
+| - Stock1: StockUp |
+| - INcresincrease: INStock |
+| - Convert: ConInt1 |
+| - BlackCoffee: BlackCoffee |
+| - Mocca: Mocca |
+| - Latte: Latte |
+| - Chocolate1: Chocolate |
++----------------------+
+| + button1_Click()  |
+| + button2_Click()  |
+| + button3_Click()  |
+| + button4_Click()  |
+| + BStockUp_Click() |
+| + Form1_Load()     |
++----------------------+
+
++----------------------+
+|  Incraingredient    |
++----------------------+
+| - amount: int       |
++----------------------+
+| + getAmount(): int  |
+| + setAmount(int)    |
++----------------------+
+
++----------------------+
+|      BuyDrink1      |
++----------------------+
+| + BuyDrink()        |
++----------------------+
+
++----------------------+
+|      BuyDrink02     |
++----------------------+
+| + BuyDrink2()       |
++----------------------+
+
++----------------------+
+|      StockUp        |
++----------------------+
+| + StockUp1()        |
++----------------------+
+
++----------------------+
+|       INStock       |
++----------------------+
+| - INwater: int      |
+| - INCof: int        |
+| - INMilk: int       |
+| - INChocolate: int  |
++----------------------+
+
++----------------------+
+|      ConInt1        |
++----------------------+
+| + convert()         |
++----------------------+
+
++----------------------+
+|    BlackCoffee      |
++----------------------+
+| - Water: int        |
+| - Coffee: int       |
++----------------------+
+
++----------------------+
+|      Turkish coffee  |
++----------------------+
+| - Water: int        |
+| - Coffee: int       |
+| - Choco: int        |
++----------------------+
+
++----------------------+
+|      Latte         |
++----------------------+
+| - Water: int        |
+| - Coffee: int       |
+| - Milk: int         |
++----------------------+
+
++----------------------+
+|    Chocolate       |
++----------------------+
+| - Water: int        |
+| - Choco: int        |
++----------------------+
+Form1 (Main Class)
+
+เป็นคลาสหลักของ GUI (WinForms) ที่ควบคุมการทำงานของเครื่องชงกาแฟ
+มีออบเจ็กต์ของคลาสอื่นๆ เช่น Incraingredient, BuyDrink1, BuyDrink02, StockUp ฯลฯ
+มีเมธอดที่ถูกเรียกเมื่อผู้ใช้กดปุ่ม เช่น button1_Click(), button2_Click(), BStockUp_Click()
+Incraingredient (ส่วนผสม)
+
+ใช้เก็บค่าปริมาณวัตถุดิบ เช่น น้ำ กาแฟ นม และช็อกโกแลต
+มีเมธอดสำหรับกำหนดค่าและรับค่าปริมาณวัตถุดิบ
+BuyDrink1 และ BuyDrink02
+																
+
+ใช้สำหรับแปลงค่าจาก TextBox ของ GUI ไปเป็นค่าตัวเลขเพื่อใช้ในการคำนวณ
+BlackCoffee, Turkish coffee, Latte, Chocolate
+
+เป็นคลาสแทนเมนูเครื่องดื่มแต่ละชนิด
+เก็บค่าปริมาณวัตถุดิบที่ต้องใช้ เช่น Water, Coffee, Milk, Choco
+ใช้ในเงื่อนไขตรวจสอบวัตถุดิบเพียงพอหรือไม่
